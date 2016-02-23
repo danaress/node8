@@ -18,12 +18,12 @@ app.get('/', function(req, res) {
 
 // displays a list of applicants
 app.get('/applicants', function(req, res){
-	console.log(req.body);
 	res.sendFile('html/applicants.html', {root : './public'});
 });
 
 // creates and applicant
 app.post('/applicant', function(req, res){
+	console.log(req.body);
 	// Here is where you need to get the data
 	// from the post body and store it in the database
 	res.send('No funciona');
